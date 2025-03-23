@@ -1,4 +1,5 @@
-# FORMIG.IA
+# **FORMIG.IA**
+## 💡 About the project
 This repository is where we will track changes and advancements to the backend.
 The system will allow individual users or groups to record and manage their expenses and income, view detailed financial reports and set personalized budgets. With this, I hope to help people (and myself!) have more control over their finances in a practical and intuitive way. 💡
 
@@ -7,7 +8,7 @@ The system will allow individual users or groups to record and manage their expe
 # **Backend README**
 
 ## 📖 Project Objective
-The **Expense Tracker Backend** is a robust API designed to power the **Expense Tracker Multi-User System**. It provides endpoints for user authentication, expense tracking, group management, and financial reporting. Built with scalability and security in mind, this backend supports individual and shared financial tracking for multiple users.
+The **FORMIG.IA Backend** is a robust API designed to power the **FORMIG.IA**. It provides endpoints for user authentication, expense tracking, group management, and financial reporting. Built with scalability and security in mind, this backend supports individual and shared financial tracking for multiple users.
 
 Key features include:
 - User registration and login with JWT authentication.
@@ -30,8 +31,8 @@ Before running the project, ensure you have the following installed:
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/expense-tracker-backend.git
-cd expense-tracker-backend
+git clone https://github.com/Ey-luccas/API_REST_FORMIG.IA.git
+cd API_REST_FORMIG.IA
 ```
 
 #### 2. Install Dependencies
@@ -110,7 +111,7 @@ Push your changes to your forked repository and submit a pull request to the mai
 
 ---
 
-Thank you for your interest in contributing to the **Expense Tracker Backend**! Together, we can make this project even more robust and secure. 😊
+Thank you for your interest in contributing to the **FORMIG.IA Backend**! Together, we can make this project even more robust and secure. 😊
 
 ---
 
