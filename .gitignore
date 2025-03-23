@@ -1,0 +1,8 @@
+# Ignora a pasta node_modules
+node_modules/
+# Ignora a pasta de build do TypeScript (se estiver usando)
+dist/
+# Ignora arquivos de ambiente (não versionados)
+.env
+# Ignora meu guia do que tou fazendo
+GUIA_BACK-END.TXT
