@@ -1,19 +1,20 @@
 # FORMIG.IA
 This repository is where we will track changes and advancements to the backend.
 The system will allow individual users or groups to record and manage their expenses and income, view detailed financial reports and set personalized budgets. With this, I hope to help people (and myself!) have more control over their finances in a practical and intuitive way. 💡
+Claro! Vou criar dois arquivos `README.md` separados: um para o **back-end** e outro para o **front-end**. Cada um será específico para sua parte do projeto, com instruções claras sobre como configurar e executar localmente.
 
+---
 
-# Expense Tracker Multi-User System
+# **Backend README**
 
 ## 📖 Project Objective
-The **Expense Tracker Multi-User System** is a full-stack application designed to help users manage their personal and shared expenses effectively. It allows individual users or groups (e.g., families, teams) to track income, expenses, and budgets, generate financial reports, and collaborate on shared financial goals. The system provides a secure, scalable, and user-friendly platform for managing finances.
+The **Expense Tracker Backend** is a robust API designed to power the **Expense Tracker Multi-User System**. It provides endpoints for user authentication, expense tracking, group management, and financial reporting. Built with scalability and security in mind, this backend supports individual and shared financial tracking for multiple users.
 
 Key features include:
-- User authentication and authorization (JWT).
-- Individual and group-based expense tracking.
-- Real-time financial reporting with charts and graphs.
-- Budgeting tools to set spending limits and savings goals.
-- Notifications for bill reminders and budget alerts.
+- User registration and login with JWT authentication.
+- CRUD operations for managing transactions (income/expenses).
+- Group-based expense sharing and collaboration.
+- Real-time financial data retrieval for reporting.
 
 ---
 
@@ -26,87 +27,55 @@ Before running the project, ensure you have the following installed:
 - [Prisma CLI](https://www.prisma.io/) (installed via `npm`)
 - [Git](https://git-scm.com/)
 
-### Steps to Run the Project
+### Steps to Run the Backend
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/your-repo/expense-tracker-backend.git
+cd expense-tracker-backend
 ```
 
-#### 2. Backend Setup
-Navigate to the `backend` directory:
-```bash
-cd backend
-```
-
-Install dependencies:
+#### 2. Install Dependencies
+Install all required dependencies using npm:
 ```bash
 npm install
 ```
 
-Set up the `.env` file:
-Create a `.env` file in the `backend` directory and add the following variables:
+#### 3. Set Up Environment Variables
+Create a `.env` file in the root directory and add the following variables:
 ```env
 DATABASE_URL="mysql://USER:PASSWORD@HOST:PORT/DATABASE_NAME"
 JWT_SECRET=your_jwt_secret_key
+PORT=5000
 ```
+Replace `USER`, `PASSWORD`, `HOST`, `PORT`, and `DATABASE_NAME` with your MySQL credentials.
 
-Run database migrations with Prisma:
+#### 4. Run Database Migrations with Prisma
+Apply the database schema using Prisma migrations:
 ```bash
 npx prisma migrate dev --name init
 ```
 
-Start the backend server:
+#### 5. Start the Server
+Start the backend server in development mode:
 ```bash
 npm run dev
 ```
 The backend will run on `http://localhost:5000`.
 
-#### 3. Frontend Setup
-Navigate to the `frontend` directory:
-```bash
-cd ../frontend
-```
-
-Install dependencies:
-```bash
-npm install
-```
-
-Start the frontend development server:
-```bash
-npm start
-```
-The frontend will run on `http://localhost:3000`.
-
-#### 4. Access the Application
-Open your browser and navigate to `http://localhost:3000`. You can now register, log in, and start using the expense tracker.
+#### 6. Test the API
+You can test the API endpoints using tools like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/). The base URL for the API is `http://localhost:5000/api`.
 
 ---
 
 ## 📌 Technologies Used
-
-### Backend
 - **Framework**: Node.js with Express
 - **ORM**: Prisma (for MySQL database interactions)
 - **Database**: MySQL
 - **Authentication**: JSON Web Tokens (JWT)
 - **Environment Variables**: Dotenv
 - **Language**: TypeScript
-
-### Frontend
-- **Framework**: React with TypeScript
-- **State Management**: Redux Toolkit or Context API
-- **Styling**: Tailwind CSS or Material-UI
-- **Charts**: Chart.js or Recharts
-- **HTTP Client**: Axios
-
-### DevOps and Tools
 - **API Documentation**: Swagger (optional)
-- **Version Control**: Git
-- **Hosting**: AWS, Heroku, Render, Netlify, or Vercel
-- **Testing**: Jest and React Testing Library (optional)
 
 ---
 
@@ -142,4 +111,8 @@ Push your changes to your forked repository and submit a pull request to the mai
 
 ---
 
-Thank you for your interest in contributing to the **Expense Tracker Multi-User System**! Together, we can make this project even more robust and user-friendly. 😊
+Thank you for your interest in contributing to the **Expense Tracker Backend**! Together, we can make this project even more robust and secure. 😊
+
+---
+
+
