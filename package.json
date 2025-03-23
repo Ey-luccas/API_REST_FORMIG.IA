@@ -1,0 +1,35 @@
+{
+  "name": "api_rest_formig.ia",
+  "version": "1.0.0",
+  "description": "This repository is where we will track changes and advancements to the backend.\r The system will allow individual users or groups to record and manage their expenses and income, view detailed financial reports and set personalized budgets. With this, I hope to help people (and myself!) have more control over their finances in a practical and intuitive way. 💡",
+  "main": "server.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ey-luccas/API_REST_FORMIG.IA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ey-luccas/API_REST_FORMIG.IA/issues"
+  },
+  "homepage": "https://github.com/Ey-luccas/API_REST_FORMIG.IA#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.11",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
